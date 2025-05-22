@@ -5,20 +5,20 @@
 class ExampleCli < Formula
   desc "Example CLI application"
   homepage "https://github.com/spinguard/example-cli"
-  version "1.0.1"
+  version "1.0.2"
 
   on_macos do
     on_intel do
-      url "https://github.com/spinguard/example-cli/releases/download/v1.0.1/example-cli_1.0.1_darwin_amd64.tar.gz"
-      sha256 "f8f53a4a51d94fca1bf8be7875a1f7818b17417d9b280ed6f4380d03b8bd1692"
+      url "https://github.com/spinguard/example-cli/releases/download/v1.0.2/example-cli_1.0.2_darwin_amd64.tar.gz"
+      sha256 "c07d23ceffd39858208617925da8bad7e4de473b4a6e67955e7df1adf285c712"
 
       def install
         bin.install "example-cli"
       end
     end
     on_arm do
-      url "https://github.com/spinguard/example-cli/releases/download/v1.0.1/example-cli_1.0.1_darwin_arm64.tar.gz"
-      sha256 "47be9ec60e96b5a85d511d849f71a3942b2f48e4d069ffa7b90b0308fede031d"
+      url "https://github.com/spinguard/example-cli/releases/download/v1.0.2/example-cli_1.0.2_darwin_arm64.tar.gz"
+      sha256 "e2c1be8984b74fb3f3783f2f563705708791ac5cd32d800fa8d1a3c50e4cc790"
 
       def install
         bin.install "example-cli"
@@ -29,8 +29,8 @@ class ExampleCli < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/spinguard/example-cli/releases/download/v1.0.1/example-cli_1.0.1_linux_amd64.tar.gz"
-        sha256 "af4406e28bdc1b8c67e009b6949be650dc4debe8d1ec7db1f0fba3e69076a6ee"
+        url "https://github.com/spinguard/example-cli/releases/download/v1.0.2/example-cli_1.0.2_linux_amd64.tar.gz"
+        sha256 "c795c79760c7b2c4e9bb63d7673999611fcf653ce81ea4c95ebc20a0bfdf9160"
 
         def install
           bin.install "example-cli"
@@ -39,8 +39,8 @@ class ExampleCli < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/spinguard/example-cli/releases/download/v1.0.1/example-cli_1.0.1_linux_arm64.tar.gz"
-        sha256 "7d44d20d0ec34bbabf350c29f3f29c824c822c502b5b47e3f0e2be14c22bd826"
+        url "https://github.com/spinguard/example-cli/releases/download/v1.0.2/example-cli_1.0.2_linux_arm64.tar.gz"
+        sha256 "350ed634c5220eb983d33a9b2b2a14e6e1d66b52fd0f90247d74632298d7dbc9"
 
         def install
           bin.install "example-cli"
